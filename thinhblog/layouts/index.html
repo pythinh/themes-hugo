@@ -1,0 +1,28 @@
+{{ define `title` }}{{ .Site.Title | safeHTML }}{{ end }}
+{{ define `content` }}
+  <main role="main" class="container mt-3">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="container mt-1 mb-3">
+          <form action="search/" method="get" id="formSearch">
+            <label for="inSearch"></label>
+            <input type="search" name="q" class="form-control" id="inSearch" value="" placeholder="Tìm kiếm">
+          </form>
+        </div>
+        <div class="d-none d-xl-block text-center mb-4">
+          <div class="ad ad-728x90"></div>
+        </div>
+        <div class="d-none d-sm-block d-xl-none text-center mb-4">
+          <div class="ad ad-468x60"></div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2">
+          {{ with .Site.GetPage `section` `blogs` }}
+            {{ range .Pages }}
+              {{ .Render `summary` }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </main>
+{{ end }}

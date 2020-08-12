@@ -1,0 +1,10 @@
+baseURL = "https://thinhblog.com/"
+languageCode = "vi"
+title = "Thịnh Blog &bull; Lập trình, Chụp ảnh và Khám phá"
+
+[params]
+    author = "Thinh Nguyen"
+    description = "Thịnh Blog"
+    facebook = "https://fb.com"
+    email = "admin@gmail.com"
+    github = "https://github.com"

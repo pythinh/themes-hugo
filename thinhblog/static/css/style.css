@@ -1,0 +1,119 @@
+/* Thinh Blog CSS */
+
+a.link:hover {
+    color: #00adb5 !important;
+}
+
+article.content img {
+    display: block;
+    height: auto !important;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+body, html {
+    font-family: "Open Sans", serif;
+}
+
+footer .container {
+    opacity: .3;
+    transition: opacity .5s;
+}
+
+footer .container:hover {
+    opacity: 1;
+}
+
+.ad {
+    border: 1px solid #6c757d;
+    margin: 0 auto;
+}
+
+.ad-728x90 {
+    height: 90px;
+    width: 728px;
+}
+
+.ad-468x60 {
+    height: 60px;
+    width: 468px;
+}
+
+.ad-300x250 {
+    height: 250px;
+    width: 300px;
+}
+
+.ad-300x600 {
+    height: 600px;
+    width: 300px;
+}
+
+.btn-page > a {
+    border-radius: 50rem;
+}
+
+.card > a {
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 0 5px 1px #6c757d !important;
+}
+
+.card-img-top {
+    transition: transform .5s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.15);
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.rounded-note {
+    border-radius: 10% 25%;
+}
+
+.side-small-text {
+    font-size: .85rem;
+}
+
+#blog-name {
+    color: #222831;
+    font-family: "Major Mono Display", serif;
+    font-size: 2rem;
+    letter-spacing: -.25rem;
+    word-spacing: -.5rem;
+}
+
+#formSearch {
+    display: none;
+}
+
+#formSearch input[type=search] {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #6c757d;
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0;
+}
+
+#to-top {
+    bottom: .5rem;
+    color: rgba(108, 117, 125, .3);
+    display: none;
+    font-size: 3rem;
+    position: fixed;
+    right: 1rem;
+    z-index: 1021;
+}
+
+#to-top:hover {
+    color: rgba(108, 117, 125, 1);
+    cursor: pointer;
+}

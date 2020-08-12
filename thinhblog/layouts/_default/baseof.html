@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ block `title` . }}{{ end }}</title>
+  <meta name="description" content="{{ block `description` . }}{{ end }}">
+  <base href="{{ .Site.BaseURL }}">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/css/bootstrap-4.5.2.min.css">
+  <link rel="stylesheet" href="vendor/css/fontawesome-5.13.0.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  {{ block `style_extra` . }}{{ end }}
+</head>
+<body class="bg-light">
+{{ partial `header.html` . }}
+{{ block `content` . }}{{ end }}
+{{ partial `footer.html` . }}
+<script src="vendor/js/jquery-3.5.1.min.js"></script>
+<script src="vendor/js/popper-1.16.1.min.js"></script>
+<script src="vendor/js/bootstrap-4.5.2.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#btnSearch").click(function () {
+      $("#formSearch").slideToggle(200);
+    });
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 500) {
+        $("#to-top").fadeIn();
+      } else {
+        $("#to-top").fadeOut();
+      }
+    });
+    $("#to-top").click(function () {
+      $("html,body").animate({scrollTop: 0});
+    });
+  });
+</script>
+{{ block `script_extra` . }}{{ end }}
+</body>
+</html>

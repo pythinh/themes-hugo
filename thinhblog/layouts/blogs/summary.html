@@ -1,0 +1,18 @@
+<div class="col mb-4">
+  <section class="card h-100 shadow-sm border-0">
+    <a href="{{ .Permalink }}"><img src="" class="card-img-top" alt="{{ .Title }}"></a>
+    <div class="card-body">
+      <h2 class="card-title"><a href="{{ .Permalink }}" class="card-link text-dark link">{{ .Title }}</a></h2>
+    </div>
+    <div class="card-footer">
+      <div class="row">
+        <div class="col-8">
+          <small class="text-muted">Cập nhật: {{ .Date.Format `02.01.2006` }}</small>
+        </div>
+        <div class="col-4 text-right">
+          <a href="" class="badge badge-dark">Test</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
