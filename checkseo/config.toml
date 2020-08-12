@@ -1,0 +1,7 @@
+baseURL = "http://example.org/"
+languageCode = "vi"
+title = "Phân tích & Đánh giá SEO cho website của bạn"
+
+[params]
+    author = "Thịnh Nguyễn"
+    description = "Trang phân tích, đánh giá SEO cho website nhanh chóng, chính xác và miễn phí"
