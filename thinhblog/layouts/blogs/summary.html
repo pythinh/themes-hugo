@@ -1,6 +1,6 @@
 <div class="col mb-4">
   <section class="card h-100 shadow-sm border-0">
-    <a href="{{ .Permalink }}"><img src="" class="card-img-top" alt="{{ .Title }}"></a>
+    <a href="{{ .Permalink }}"><img src="{{ .Page.Params.Thumbnail }}" class="card-img-top" alt="{{ .Title }}"></a>
     <div class="card-body">
       <h2 class="card-title"><a href="{{ .Permalink }}" class="card-link text-dark link">{{ .Title }}</a></h2>
     </div>
