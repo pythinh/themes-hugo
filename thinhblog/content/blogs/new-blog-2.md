@@ -1,8 +1,8 @@
 ---
-title: "Test Post"
+title: "New Blog 2"
 author: "Thịnh Nguyễn"
 description: ""
-date: 2020-08-12T23:18:23+07:00
+date: 2020-08-14T07:23:04+07:00
 thumbnail: "img/blogs/350x200.png"
 categories: [""]
 tags: [""]
