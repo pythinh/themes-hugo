@@ -1,3 +1,4 @@
 ---
-title: "Trang chủ"
+title: "Home"
 ---
+
