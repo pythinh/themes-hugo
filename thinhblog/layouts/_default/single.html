@@ -1,0 +1,33 @@
+{{ define `title` }}{{ .Title }}{{ end }}
+{{ define `description` }}{{ end }}
+{{ define `content` }}
+  <main role="main" class="container mt-3">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="container mt-1 mb-3">
+          {{ partial `searchForm.html` . }}
+        </div>
+        <div class="d-none d-xl-block text-center mb-4">
+          <div class="ad ad-728x90"></div>
+        </div>
+        <div class="d-none d-sm-block d-xl-none text-center mb-4">
+          <div class="ad ad-468x60"></div>
+        </div>
+        <section class="header">
+          <h2><strong>{{ .Title }}</strong></h2>
+          <hr class="my-3">
+          <article class="bg-white p-3 mb-4 rounded shadow-sm content">
+            {{ .Content }}
+          </article>
+          <div class="d-none d-xl-block text-center mb-4">
+            <div class="ad ad-728x90"></div>
+          </div>
+          <div class="d-none d-sm-block d-xl-none text-center mb-4">
+            <div class="ad ad-468x60"></div>
+          </div>
+        </section>
+      </div>
+      {{ partial `sidebar.html` . }}
+    </div>
+  </main>
+{{ end }}
