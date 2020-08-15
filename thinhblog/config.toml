@@ -5,6 +5,7 @@ title = "Thịnh Blog &bull; Lập trình, Chụp ảnh và Khám phá"
 [params]
     author = "Thinh Nguyen"
     description = "Thịnh Blog"
+    shortIntro = "Hi, tôi đam mê code và lập trình"
     facebook = "https://fb.com"
     email = "admin@gmail.com"
     github = "https://github.com"
