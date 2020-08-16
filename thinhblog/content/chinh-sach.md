@@ -1,5 +1,5 @@
 ---
-title: "Chinh Sach"
+title: "Chính Sách"
 description: ""
 date: 2020-08-15T15:31:11+07:00
 draft: false
