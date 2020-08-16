@@ -1,11 +1,15 @@
 baseURL = "https://thinhblog.com/"
 languageCode = "vi"
 title = "Thịnh Blog &bull; Lập trình, Chụp ảnh và Khám phá"
+removePathAccents = true
 
 [params]
-    author = "Thinh Nguyen"
+    author = "Thịnh Nguyễn"
     description = "Thịnh Blog"
     shortIntro = "Hi, tôi đam mê code và lập trình"
     facebook = "https://fb.com"
     email = "admin@gmail.com"
     github = "https://github.com"
+
+[taxonomies]
+    category = "categories"

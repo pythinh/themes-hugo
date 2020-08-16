@@ -12,7 +12,9 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danh mục</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <!-- TODO: -->
+              {{ range (.Site.GetPage `categories`).Pages }}
+                <a class="dropdown-item" href="{{ .Permalink }}">{{ .Title }}</a>
+              {{ end }}
             </div>
           </li>
         </ul>

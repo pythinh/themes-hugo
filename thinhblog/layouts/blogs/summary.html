@@ -10,7 +10,9 @@
           <small class="text-muted">Cập nhật: {{ .Date.Format `02.01.2006` }}</small>
         </div>
         <div class="col-4 text-right">
-          <a href="" class="badge badge-dark">Test</a>
+          {{ range .Page.Params.categories }}
+            <a href="categories/{{ . | urlize }}" class="badge badge-dark">{{ . }}</a>
+          {{ end }}
         </div>
       </div>
     </div>
