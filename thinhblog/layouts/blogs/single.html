@@ -35,7 +35,9 @@
               </small>
             </div>
             <div class="col-4 d-flex align-items-center justify-content-end">
-              <a href="" class="badge badge-dark">{{ range .Page.Params.Categories }}{{ . }}{{ end }}</a>
+              {{ range .Page.Params.categories }}
+                <a href="categories/{{ . | urlize }}" class="badge badge-dark">{{ . }}</a>
+              {{ end }}
             </div>
           </div>
         </section>
