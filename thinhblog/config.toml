@@ -1,6 +1,7 @@
 baseURL = "https://thinhblog.com/"
 languageCode = "vi"
 title = "Thịnh Blog &bull; Lập trình, Chụp ảnh và Khám phá"
+paginate = 6
 removePathAccents = true
 
 [params]

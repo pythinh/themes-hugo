@@ -13,7 +13,8 @@
           <div class="ad ad-468x60"></div>
         </div>
         <div class="row row-cols-1 row-cols-md-2">
-          {{ range (.Paginator 6).Pages }}
+          {{ $paginator := .Paginate .Pages }}
+          {{ range $paginator.Pages }}
             {{ .Render `summary` }}
           {{ end }}
         </div>
@@ -23,6 +24,7 @@
         <div class="d-none d-sm-block d-xl-none text-center mb-4">
           <div class="ad ad-468x60"></div>
         </div>
+        {{ partial `pagination.html` . }}
       </div>
       {{ partial `sidebar.html` . }}
     </div>
