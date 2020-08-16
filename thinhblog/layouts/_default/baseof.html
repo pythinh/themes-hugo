@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ block `title` . }}{{ end }}</title>
   <meta name="description" content="{{ block `description` . }}{{ end }}">
+  <meta name="author" content="{{ .Site.Params.Author }}">
   <base href="{{ .Site.BaseURL }}">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans&display=swap" rel="stylesheet">
